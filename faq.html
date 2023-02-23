@@ -1,80 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Spotfy</title>
+    <title>Soptfy</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <link rel="icon" type="image/png" href="imgs/logo_colorido_semFundo.png"/>
+    <link rel="icon" type="image/png" href="imgs/logo_colorido_semFundo.png" />
 </head>
-<body style="background-color: #0D1B2A;">
+
+<body style="background-color: #33415c;">
     <!-- barra de navegação -->
     <nav class="navbar navbar-inverse ">
         <div class="container-fluid">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="home.html">
-                <img src="imgs/logo_colorido_semFundo.png" width="40" style="margin-top: -10px;" alt="">
-            </a>
-            <a class="navbar-brand" href="home.html">nome do produto</a>
-        </div>
-        <div class="collapse navbar-collapse" id="myNavbar">
-            <ul class="nav navbar-nav">
-            <li><a href="home.html">Home</a></li>
-            <li class="active"><a href="faq.html">FAQ</a></li>
-            <li><a href="forms.html">Forms</a></li>
-            </ul>
-            <ul class="nav navbar-nav navbar-right">
-            <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-            <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-            </ul>
-        </div>
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="home.html">
+                    <img src="imgs/logo_colorido_semFundo.png" width="40" style="margin-top: -10px;" alt="">
+                </a>
+                <a class="navbar-brand" href="home.html">Soptfy</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li><a href="home.html">Home</a></li>
+                    <li class="active"><a href="faq.html">Suporte</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="forms.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                    <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                </ul>
+            </div>
         </div>
     </nav>
     <!-- layout -->
-    <div clas="container-fluid">
+    <div clas="container-fluid" style="margin-right: 15px;">
         <div class="row">
-            <div class="col-sm-2" ></div>
-            <div class="col-sm-8" >
-                <div class="well well-md" style="background-color: #1B263B; border-color: #1B263B;">
-                    <div class="row">
-                        <h1 style="color: #778DA9;">Como podemos te ajudar?</h1> 
-                    </div>
-                    
-                    <div class="row" style="text-align: center;" >
-                        <h4 class="faqPerguntas" data-toggle="collapse" data-target="#pergunta1">Pergunta 1</h4>
-                        <div id="pergunta1" class="collapse faqRespostas">
-                            Resposta 1
+            <div class="col-sm-2"></div>
+            <div class="interface col-sm-8 well well-md">
+                <div class="row">
+                    <h1 style="color: #778DA9; margin-left: 10px;">Como podemos te ajudar?</h1>
+                </div>
+
+                <div class="row" style="text-align: center;">
+                    <h3 class="faqPerguntas" data-toggle="collapse" data-target="#pergunta1">Não consigo redefinir a
+                        senha</h3>
+                    <div id="pergunta1" class="collapse faqRespostas">
+                        <div class="col-sm-1"></div>
+                        <div class="respostas col-sm-10 well well-sm">
+                            <h3>Endereço de e-mail antigo?</h3>
+                            <h4>Você precisa ter acesso ao endereço de e-mail cadastrado na sua conta do Spotify para
+                                abrir o link de redefinição de senha que nós enviamos.</h4>
+                            <h3>Caso você não tenha acesso, estas são algumas opções:</h3>
+                            <h4>◉ Recupere o acesso ao endereço de e-mail, se possível.</h4>
+                            <h4>◉ Crie uma <a href="forms.html">nova conta</a> e comece do zero.</h4>
                         </div>
+                        <div class="col-sm-1"></div>
                     </div>
-                    <div class="row" style="text-align: center;" >
-                        <h4 class="faqPerguntas" data-toggle="collapse" data-target="#pergunta2">Pergunta 2</h4>
-                        <div id="pergunta2" class="collapse faqRespostas">
-                            Resposta 2
+                </div>
+                <div class="row" style="text-align: center;">
+                    <h3 class="faqPerguntas" data-toggle="collapse" data-target="#pergunta2">Formas de pagamento</h3>
+                    <div id="pergunta2" class="collapse faqRespostas">
+                        <div class="col-sm-1"></div>
+                        <div class="respostas col-sm-10 well well-sm">
+                            <h3>Você pode pagar pelo Spotify Premium de muitas maneiras:</h3>
+                            <div class="listas panel panel-default">
+                                <div class="itensLista panel-body">◉ Cartão de crédito/débito</div>
+                                <div class="itensLista panel-body">◉ Cartões pré-pagos</div>
+                                <div class="itensLista panel-body">◉ PayPal</div>
+                                <div class="itensLista panel-body">◉ Vales-presente</div>
+                                <div class="itensLista panel-body">◉ Pagamento móvel</div>
+                                <div class="itensLista panel-body">◉ Plano pré-pago</div>
+                            </div>
+                            <h4><strong>Observação</strong>: os métodos variam de acordo com o país ou região.</h4>
                         </div>
+                        <div class="col-sm-1"></div>
                     </div>
-                    <div class="row" style="text-align: center;" >
-                        <h4 class="faqPerguntas" data-toggle="collapse" data-target="#pergunta3">Pergunta 3</h4>
-                        <div id="pergunta3" class="collapse faqRespostas">
-                            Resposta 3
+                </div>
+                <div class="row" style="text-align: center;">
+                    <h3 class="faqPerguntas" data-toggle="collapse" data-target="#pergunta3">Assine ou entre num plano
+                        Premium Família</h3>
+                    <div id="pergunta3" class="collapse faqRespostas">
+                        <div class="col-sm-1"></div>
+                        <div class="respostas col-sm-10 well well-sm">
+                            <h3>Premium Família:</h3>
+                            <img src="imgs/copiei.png">
+                            <h4>O Premium Família é um plano com desconto para até 6 pessoas que moram juntas.</h4>
+                            <h4>Cada um tem uma conta Premium, com senha própria e músicas salvas separadas. A cada 12
+                                meses, os membros podem mudar de plano uma vez.</h4>
+                            <h4><strong>Nota</strong>: não é possível mudar o administrador do plano.</h4>
                         </div>
+                        <div class="col-sm-1"></div>
                     </div>
-                    
                 </div>
             </div>
-            
-            <div class="col-sm-2" ></div>
+
+            <div class="col-sm-2"></div>
         </div>
-    
+
     </div>
 
 </body>
+
 </html>
